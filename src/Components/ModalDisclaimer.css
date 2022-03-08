@@ -1,0 +1,87 @@
+.Disclaimer {
+    position: relative;
+    width: 100%;
+}
+
+.Disclaimer .btn-disclaimer,
+.Disclaimer .disclaimer-popup .disclaimer-content .btn-close {
+    cursor: pointer;
+    width: 130px;
+    margin: 2px auto;
+    padding: 5px 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: none;
+    color: purple;
+    transition: .4s ease-in-out;
+    background: #fff;
+    box-shadow: 1px 1px 1px 2px rgba(94, 255, 0, 0.3);
+}
+
+.Disclaimer .btn-disclaimer:hover,
+.Disclaimer .disclaimer-popup .disclaimer-content .btn-close:hover {
+    box-shadow: 1px 1px 1px 0px rgba(94, 255, 0, 0.2);
+}
+
+.Disclaimer .disclaimer-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.Disclaimer .disclaimer-popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Disclaimer .disclaimer-popup .disclaimer-content {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    overflow: auto;
+    border-radius: 4px;
+    padding: 10px 15px;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.Disclaimer .disclaimer-popup .disclaimer-content ul li {
+    margin: 0.5rem auto;
+}
+
+.Disclaimer .disclaimer-popup .disclaimer-content button {
+    float: right;
+}
+
+.Disclaimer .disclaimer-popup .disclaimer-content .btn-close-disclaimer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: purple;
+    transition: .4s ease-in-out;
+}
+
+.Disclaimer .disclaimer-popup .disclaimer-content .btn-close-disclaimer:hover {
+    filter: brightness(1.3);
+}
